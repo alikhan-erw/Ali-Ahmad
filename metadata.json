@@ -1,0 +1,6 @@
+{
+  "name": "Zauq Luxury — E-Commerce & Business Management Platform",
+  "description": "A scalable, branded luxury e-commerce and retail enterprise platform featuring multi-role RBAC (Customer, Employee, Admin), real-time inventory management, order tracking, and localized checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
