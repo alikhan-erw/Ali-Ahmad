@@ -2,6 +2,12 @@ import type { Metadata } from 'next';
 import { ProductDetailView } from '../../../src/components/ProductDetailView';
 import { INITIAL_PRODUCTS } from '../../../src/data/mockData';
 
+export function generateStaticParams() {
+  return INITIAL_PRODUCTS.map((p) => ({
+    slug: p.slug,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {

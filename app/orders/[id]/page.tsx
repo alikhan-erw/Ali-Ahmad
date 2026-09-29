@@ -1,5 +1,12 @@
 import type { Metadata } from 'next';
 import { CustomerDashboard } from '../../../src/components/CustomerDashboard';
+import { INITIAL_ORDERS } from '../../../src/data/mockData';
+
+export function generateStaticParams() {
+  return INITIAL_ORDERS.map((o) => ({
+    id: o.id,
+  }));
+}
 
 export const metadata: Metadata = {
   title: 'Order Status & Tracking | Zauq Luxury',
